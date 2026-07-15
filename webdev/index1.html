@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Focus Timer</h1>
+        <p class="tagline">Simple, reliable timer for focused work sessions</p>
+      </header>
+
+      <section class="card">
+        <div class="ring" id="ring">
+          <div id="output">25:00</div>
+        </div>
+
+        <div class="controls">
+          <div class="inputs">
+            <label>
+              Minutes
+              <input type="number" id="min" min="0" value="25" />
+            </label>
+            <label>
+              Seconds
+              <input type="number" id="sec" min="0" max="59" value="0" />
+            </label>
+          </div>
+
+          <div class="buttons">
+            <button id="start" class="primary">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+          </div>
+
+          <div class="presets">
+            <button class="preset" data-min="5">5</button>
+            <button class="preset" data-min="10">10</button>
+            <button class="preset" data-min="15">15</button>
+            <button class="preset" data-min="25">25</button>
+            <button class="preset" data-min="50">50</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">Tip: Press a preset or set custom minutes and press Start.</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
